@@ -105,7 +105,7 @@ We would love you for the contribution to **BezierRefreshControl**, check the ``
 
 ## Meta
 
-Your Name – [@cjd1884](https://twitter.com/cjd1884) – k.dimitros@gmail.com
+Konstantinos Dimitros – [@cjd1884](https://twitter.com/cjd1884) – k.dimitros@gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
