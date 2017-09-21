@@ -76,6 +76,9 @@ class BezierRefreshControl: NSObject, UIScrollViewDelegate {
         // Calculate scale (predefined loading item height / pathRect height)
         self.scale = loadingItemHeight / pathRect!.height
         
+        // Calculate shape layer width (taking scale into consideration)
+        let shapeLayerWidth = pathRect!.width * scale
+        
         // Calculate shape layer height (taking scale into consideration)
         let shapeLayerHeight = pathRect!.height * scale
         
@@ -86,7 +89,9 @@ class BezierRefreshControl: NSObject, UIScrollViewDelegate {
         path.apply(CGAffineTransform(scaleX: scale, y: scale))
         
         // Calculate shape layer bounds
-        let xOffset = -hostScrollView.frame.size.width/2 + scale*(pathRect!.width)
+//        let xOffset = -hostScrollView.frame.size.width/2 + scale*(pathRect!.width)
+        let xOffset = -hostScrollView.frame.size.width/2 + shapeLayerWidth/2
+        
 //        let yOffset = shapeLayerHeight + verticalPadding // Pinned at the bottom of the available space
         let yOffset = shapeLayerTotalHeight/2 + shapeLayerHeight/2 // Centered vertically in the available space
         let bounds = CGRect(x: xOffset, y: yOffset, width: 0, height: 0)
