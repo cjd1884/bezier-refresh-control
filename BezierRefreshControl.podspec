@@ -22,10 +22,10 @@ BezierRefreshControl implements an animated way of drawing bezier paths to be us
                        DESC
 
   s.homepage         = 'https://github.com/cjd1884/bezier-refresh-control'
-  s.screenshots     = 'https://media.giphy.com/media/TaOFG4SYsQa76/giphy.gif'
+  s.screenshots      = 'https://media.giphy.com/media/TaOFG4SYsQa76/giphy.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'k.dimitros@gmail.com'
-  s.source           = { :git => 'git@github.com:cjd1884/bezier-refresh-control.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/cjd1884/bezier-refresh-control.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/cjd1884'
 
   s.ios.deployment_target = '8.0'
