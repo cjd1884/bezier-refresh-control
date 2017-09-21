@@ -1,0 +1,22 @@
+{
+  "name": "BezierRefreshControl",
+  "version": "0.1.0",
+  "summary": "A short description of BezierRefreshControl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/k.dimitros@gmail.com/BezierRefreshControl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "k.dimitros@gmail.com": "k.dimitros@iit.demokritos.gr"
+  },
+  "source": {
+    "git": "https://github.com/k.dimitros@gmail.com/BezierRefreshControl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BezierRefreshControl/Classes/**/*"
+}

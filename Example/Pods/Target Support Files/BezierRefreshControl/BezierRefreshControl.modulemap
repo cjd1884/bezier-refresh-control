@@ -1,0 +1,6 @@
+framework module BezierRefreshControl {
+  umbrella header "BezierRefreshControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

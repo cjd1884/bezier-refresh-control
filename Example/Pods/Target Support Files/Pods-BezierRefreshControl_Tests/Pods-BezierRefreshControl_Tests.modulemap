@@ -1,0 +1,6 @@
+framework module Pods_BezierRefreshControl_Tests {
+  umbrella header "Pods-BezierRefreshControl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
