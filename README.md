@@ -1,13 +1,11 @@
 # Bezier Refresh Control
 > A vector-based (using bezier paths) animated loading control (pull-to-refresh) for iOS scroll views (to be used in table & collection views).
 
-[![Version](https://img.shields.io/cocoapods/v/BezierRefreshControl.svg?style=flat)](http://cocoapods.org/pods/BezierRefreshControl)
 [![Swift Version][swift-image]][swift-url]
+[![CocoaPods Compatible][pod-image]][pod-url]
+[![CI Status][ci-image]][ci-url]
+[![PRs Welcome][pr-image]][pr-url]
 [![License][license-image]][license-url]
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
-[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
-[![CI Status](http://img.shields.io/travis/cjd1884/BezierRefreshControl.svg?style=flat)](https://travis-ci.org/cjd1884/bezier-refresh-control)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 BezierRefreshControl implements an animated way of drawing bezier paths to be used as a loading control in iOS scroll views - like in case of refreshing the content of a table view (or collection view) - pull-to-refresh action. Developer can provide its own bezier path at the initialisation phase of the control to be animated. The animation executes while data is loading (e.g. fetching data from a remote source/API).
 
@@ -101,17 +99,27 @@ self.refreshControl.scrollViewDidEndDragging(scrollView, willDecelerate: deceler
 
 ## Contribute
 
-We would love you for the contribution to **BezierRefreshControl**, check the ``LICENSE`` file for more info.
+I would love your contribution to **BezierRefreshControl**, check the ``LICENSE`` file for more info.
 
-## Meta
+## About Me
 
-Konstantinos Dimitros – [@cjd1884](https://twitter.com/cjd1884) – k.dimitros@gmail.com
+Konstantinos Dimitros |
+[twitter](https://twitter.com/cjd1884) |
+[email](k.dimitros@gmail.com) |
+[github](https://github.com/cjd1884/) |
+[linkedin](https://www.linkedin.com/in/konstantinos-dimitros-49105522/)
 
+## License
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/cjd1884/bezier-refresh-control](https://github.com/cjd1884/)
 
-[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[pod-image]: https://img.shields.io/cocoapods/v/BezierRefreshControl.svg?style=flat
+[pod-url]: http://cocoapods.org/pods/BezierRefreshControl
+[swift-image]: https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
+[ci-image]: http://img.shields.io/travis/cjd1884/BezierRefreshControl.svg?style=flat
+[ci-url]: https://travis-ci.org/cjd1884/bezier-refresh-control
+[pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[pr-url]: http://makeapullrequest.com
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: https://opensource.org/licenses/MIT
