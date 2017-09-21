@@ -3,6 +3,7 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 language: swift
+osx_image: xcode8.3
 
 # cache: cocoapods
 podfile: Example/Podfile
