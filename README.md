@@ -3,7 +3,7 @@
 
 [![Swift Version][swift-image]][swift-url]
 [![CocoaPods Compatible][pod-image]][pod-url]
-[![CI Status][ci-image]][ci-url]
+[![Build Status][build-image]][build-url]
 [![PRs Welcome][pr-image]][pr-url]
 [![License][license-image]][license-url]
 
@@ -117,8 +117,8 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [pod-url]: http://cocoapods.org/pods/BezierRefreshControl
 [swift-image]: https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
-[ci-image]: http://img.shields.io/travis/cjd1884/BezierRefreshControl.svg?style=flat
-[ci-url]: https://travis-ci.org/cjd1884/bezier-refresh-control
+[build-image]: https://travis-ci.org/cjd1884/bezier-refresh-control.svg?branch=master
+[build-url]: https://travis-ci.org/cjd1884/bezier-refresh-control
 [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [pr-url]: http://makeapullrequest.com
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
