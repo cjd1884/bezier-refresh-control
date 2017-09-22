@@ -19,6 +19,20 @@ import UIKit
     @objc optional func loadingDidCanceled()
 }
 
+public class BezierRefreshControlSizing {
+    public static func calculateLayerTotalHeight(topOffset: CGFloat, shapeLayerHeight: CGFloat, verticalPadding: CGFloat) -> CGFloat {
+        return topOffset + shapeLayerHeight + 2*verticalPadding
+    }
+    
+    public static func calculateLayerBoundsOffsetX(viewWidth: CGFloat, shapeLayerWidth: CGFloat) -> CGFloat {
+        return -viewWidth/2 + shapeLayerWidth/2
+    }
+    
+    public static func calculateLayerBoundsOffsetY(shapeLayerTotalHeight: CGFloat, shapeLayerHeight: CGFloat) -> CGFloat {
+        return shapeLayerTotalHeight/2 + shapeLayerHeight/2
+    }
+}
+
 public class BezierRefreshControl: NSObject, UIScrollViewDelegate {
     
     // Delegate
@@ -83,6 +97,7 @@ public class BezierRefreshControl: NSObject, UIScrollViewDelegate {
     
     // MARK: - Animation initialization
     fileprivate func initAnimations() {
+        //        let sizingControl = BezierRefreshControlSizing()
         
         // Update path rect (bounding box)
         self.pathRect = path.cgPath.boundingBoxOfPath;
@@ -97,17 +112,16 @@ public class BezierRefreshControl: NSObject, UIScrollViewDelegate {
         let shapeLayerHeight = pathRect!.height * scale
         
         // Calculate shape layer total height
-        self.shapeLayerTotalHeight = topOffset + shapeLayerHeight + 2*verticalPadding
+        self.shapeLayerTotalHeight =  BezierRefreshControlSizing.calculateLayerTotalHeight(topOffset: topOffset, shapeLayerHeight: shapeLayerHeight, verticalPadding: verticalPadding)
         
         // Scale path to fit predefined loading item height
         path.apply(CGAffineTransform(scaleX: scale, y: scale))
         
         // Calculate shape layer bounds
-//        let xOffset = -hostScrollView.frame.size.width/2 + scale*(pathRect!.width)
-        let xOffset = -hostScrollView.frame.size.width/2 + shapeLayerWidth/2
-        
-//        let yOffset = shapeLayerHeight + verticalPadding // Pinned at the bottom of the available space
-        let yOffset = shapeLayerTotalHeight/2 + shapeLayerHeight/2 // Centered vertically in the available space
+        //        let xOffset = -hostScrollView.frame.size.width/2 + scale*(pathRect!.width)
+        let xOffset = BezierRefreshControlSizing.calculateLayerBoundsOffsetX(viewWidth: hostScrollView.frame.size.width, shapeLayerWidth: shapeLayerWidth)
+        //        let yOffset = shapeLayerHeight + verticalPadding // Pinned at the bottom of the available space
+        let yOffset = BezierRefreshControlSizing.calculateLayerBoundsOffsetY(shapeLayerTotalHeight: shapeLayerTotalHeight, shapeLayerHeight: shapeLayerHeight) // Centered vertically in the available space
         let bounds = CGRect(x: xOffset, y: yOffset, width: 0, height: 0)
         
         // Create CAShapeLayer

@@ -1,5 +1,5 @@
 PODS:
-  - BezierRefreshControl (0.1.0)
+  - BezierRefreshControl (1.0.0)
   - Nimble (5.1.1)
   - Quick (1.0.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BezierRefreshControl: c37d8c22ab9a3aacb9385dcc62edb0a4822379b9
+  BezierRefreshControl: 4b295b8c491ed73829394be955f68d44dbfa0f7f
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
 
