@@ -9,7 +9,7 @@
 
 BezierRefreshControl implements an animated way of drawing bezier paths to be used as a loading control in iOS scroll views - like in case of refreshing the content of a table view (or collection view) - pull-to-refresh action. Developer can provide its own bezier path at the initialisation phase of the control to be animated. The animation executes while data is loading (e.g. fetching data from a remote source/API).
 
-![FlameRefreshControl](https://media.giphy.com/media/TaOFG4SYsQa76/giphy.gif)
+![FlameRefreshControl](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODcybDNjOGVvajJ5NWt0a2piZnJkbXhrN2NlczBpZGN1azRrOWI1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YogL4S4Udez8Ti1KxZ/giphy.gif)
 
 ## Features
 
